@@ -491,3 +491,4 @@ h1 mark{margin-right:.1em}
 .ch-cta{margin-top:80px}
 .chapter .foot{padding:40px 6vw}
 @media(max-width:760px){.ch-wrap{padding-top:110px}.prose{font-size:17px}}
+.ch-pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:56px 0 0;padding-top:32px;border-top:1px dashed var(--line)}
