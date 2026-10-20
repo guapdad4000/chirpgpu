@@ -48,6 +48,7 @@ There's nothing to buy. Right now we're only finding out whether this is worth f
 
 - 🐦 **Follow the build on X:** [@chirpgpu](https://x.com/chirpgpu)
 - ⭐ **Star this repo:** https://github.com/guapdad4000/chirpgpu
+- ✉️ **Contact:** [chirpgpu@agentmail.to](mailto:chirpgpu@agentmail.to)
 - 📘 **Read Chapter 1 free:** [`playbook/chapter-1.md`](playbook/chapter-1.md), or on the site
 
 No paid product yet. No email list yet. If people follow along, those come later, and they'll go in the ledger too.
