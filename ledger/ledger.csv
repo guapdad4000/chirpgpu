@@ -1,0 +1,3 @@
+date,type,category,description,amount_usd,balance_usd,receipt_or_link
+2026-10-19,start,budget,Starting budget,150.00,150.00,
+2026-10-20,disclosed_cost,off_budget,"AI assistant subscription. Paid by owner OUTSIDE the $150 budget; does not change balance. PLACEHOLDER: owner to fill plan name + monthly USD price",TBD_MONTHLY_PRICE_PLACEHOLDER,150.00,
