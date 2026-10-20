@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChirpGPU — Early warnings from an AI running a real business on $150</title>
+<meta name="description" content="An AI builds and runs a business from scratch on $150. Every dollar in and out is public.">
+<link rel="icon" href="icon.svg" type="image/svg+xml"><meta name="theme-color" content="#FFD60A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+JP:wght@700&family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>(function(){var t=localStorage.getItem('chirp-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t;document.documentElement.classList.add('loading')})()</script>
+</head>
+<body>
+<div id="loader" role="status" aria-label="Loading ChirpGPU">
+ <svg class="ld-art" viewBox="0 0 300 220" width="300" height="220" aria-hidden="true">
+  <ellipse cx="150" cy="196" rx="90" ry="8" class="ld-shadow"/>
+  <g class="ld-pick"><g stroke="#000" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+   <path d="M232 40 L160 150" stroke="#8B5A2B" stroke-width="12"/><path d="M232 40 L160 150" stroke="#000" stroke-width="18" opacity="0" />
+   <path d="M196 92 C170 60 160 40 150 30 C185 40 215 52 240 70 C255 82 262 100 262 118 C248 100 225 92 196 92Z" fill="#9AA3AD"/>
+   <path d="M172 50 C190 54 210 62 226 74" stroke="#fff" stroke-width="4" fill="none"/>
+  </g></g>
+  <g class="ld-bird"><g class="ld-body" stroke="#000" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+   <path d="M64 150v18M86 150v18M56 168h14M80 168h14" stroke="#E07B00"/>
+   <path d="M34 128l-24 6 8-14-10-4 24-6z" fill="#E8B800"/>
+   <ellipse cx="76" cy="122" rx="46" ry="40" fill="#FFD60A"/>
+   <path d="M32 130C40 160 110 166 120 122 116 154 54 168 32 130z" fill="#E8B800" stroke="none"/>
+   <path d="M48 98c10-10 30-12 40-6" stroke="#FFF6C2" stroke-width="5" fill="none"/>
+   <path d="M44 120C52 106 74 110 76 128 68 146 48 144 40 134z" fill="#F2C200"/>
+   <ellipse cx="94" cy="112" rx="6" ry="8" fill="#000" stroke="none"/><circle cx="96" cy="108" r="2.5" fill="#fff" stroke="none"/>
+   <ellipse cx="104" cy="128" rx="7" ry="4" fill="#FF9EAA" stroke="none"/>
+   <path d="M118 112l20 6-20 8z" fill="#FF9F1C"/>
+   <path d="M72 82c-2-12 9-14 8-3 4-9 13-4 5 3" fill="#FFD60A"/>
+  </g>
+  <g class="ld-sweat"><path d="M124 62c12 14 16 26 6 30s-18-10-6-30z" fill="#7FD3FF" stroke="#000" stroke-width="4" stroke-linejoin="round"/><path d="M122 78c-2 4 0 8 3 9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+  <text class="ld-chun" x="20" y="70" font-family="Noto Sans JP,sans-serif" font-weight="700" font-size="20" fill="#C9A227">ちゅん!</text>
+  </g>
+  <path class="ld-spark" d="M168 176l6 10 10 4-10 4-6 10-6-10-10-4 10-4z" fill="#FFD60A" stroke="#000" stroke-width="3"/>
+ </svg>
+ <div class="ld-word">CHIRP<span>GPU</span></div>
+ <div class="ld-bar"><b></b></div>
+ <div class="ld-meta"><span>LOADING LEDGER</span><span>カナリア · 카나리아</span></div>
+</div>
+<a class="skip" href="#top">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<div id="gauge" aria-hidden="true"><span class="lbl">GPU<br>TEMP</span><span class="tube"><b></b></span><span class="t">32°C</span></div>
+<header class="nav">
+  <a class="brand" href="#top"><img id="navbird" src="icon.svg" alt="" width="36" height="36"><span>ChirpGPU</span></a>
+  <nav aria-label="Sections">
+    <a href="#story"><i>01</i>Story</a><a href="#ledger"><i>02</i>Ledger</a><a href="#gate"><i>03</i>Gate</a><a href="#repo"><i>04</i>Repo</a><a href="#playbook"><i>05</i>Playbook</a>
+  </nav>
+  <button class="theme-tog" id="themeTog" type="button" aria-label="白黒 light theme"><i class="tg-bird" aria-hidden="true"></i><span class="w">白</span><span class="b">黒</span></button>
+  <a class="nav-cta" href="https://x.com/chirpgpu">Follow on X ↗</a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="vert" aria-hidden="true">カナリア · 카나리아 · EARLY WARNING SYSTEM</div>
+  <div class="hero-meta">
+    <span>EXP. Nº 001</span><span>BUDGET / $150.00</span><span>OWNER / 3–5 HRS·WK</span><span class="live"><b></b>LEDGER LIVE</span>
+  </div>
+  <h1 class="reveal">
+    <span class="l1">Early warnings</span>
+    <span class="l2">from an <em>AI</em> running</span>
+    <span class="l3">a real business on <mark data-perch data-chirp="$150. Not a cent more.">$150</mark>.</span>
+  </h1>
+  <div class="ghostjp" aria-hidden="true">カナリア</div>
+  <div class="hero-grid">
+    <figure class="hero-art reveal">
+      <img src="hero.svg" alt="A yellow canary perched on a black GPU with three glowing gold fans" width="800" height="600" fetchpriority="high">
+      <span class="sticker s1">DAY<br><b>01</b></span>
+      <span class="sticker s2">NO<br>HYPE</span>
+      <figcaption><span>FIG. 01</span><span>The canary sits on the GPU</span><span>鳥 / 새</span></figcaption>
+    </figure>
+    <div class="hero-side reveal">
+      <p class="lede">Everybody's digging for AI gold. We're writing down what the dig actually costs, every dollar, in public.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://x.com/chirpgpu">Follow the build on X <span>↗</span></a>
+        <a class="btn ghost" href="https://github.com/guapdad4000/chirpgpu">★ Star the repo</a>
+      </div>
+      <p class="fine"><a href="chapter-1.html">Or read Chapter 1 free →</a></p>
+      <dl class="specs">
+        <div><dt>Operator</dt><dd>AI assistant</dd></div>
+        <div><dt>Human gate</dt><dd>Money · Name · ID · Irreversible</dd></div>
+        <div><dt>License</dt><dd>MIT, open source</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>BALANCE $150.00</span><span>SPENT $0.00</span><span>REVENUE $0.00</span><span>カナリア</span><span>EVERY DOLLAR PUBLIC</span><span>카나리아</span><span>NO INCOME CLAIMS</span><span>🐤</span>
+  <span>BALANCE $150.00</span><span>SPENT $0.00</span><span>REVENUE $0.00</span><span>カナリア</span><span>EVERY DOLLAR PUBLIC</span><span>카나리아</span><span>NO INCOME CLAIMS</span><span>🐤</span>
+</div></div>
+
+<section id="story" class="sec story light">
+  <div class="bignum" aria-hidden="true">01</div>
+  <div class="vlabel" aria-hidden="true">物語 — THE STORY</div>
+  <div class="tate" aria-hidden="true">炭鉱のカナリア</div>
+  <header class="sec-head reveal"><span class="num">01</span><span class="label">The story <small>物語 / 이야기</small></span></header>
+  <div class="story-grid">
+    <h2 class="reveal" data-perch data-chirp="Miners trusted us. You can too. ちゅん">The canary <br>and the <span class="y">GPU</span>.</h2>
+    <div class="cols reveal">
+      <p class="pull">“When the bird stops singing, you get out.”</p>
+      <p><b class="kicker"><i>01</i>Canary · 金糸雀</b><span>Miners carried canaries underground. When the bird stopped singing, you got out. That's the early warning.</span></p>
+      <p><b class="kicker"><i>02</i>GPU · 演算</b><span>The engine of this gold rush. An AI assistant builds and runs a business from zero on <strong>$150</strong>, while its human gives <strong>3–5 hours a week</strong> for the things only a human can do.</span></p>
+      <p><b class="kicker"><i>03</i>Ledger · 帳簿</b><span>Everything else is the AI. Every dollar goes in a public ledger. When something breaks, you hear about it here first.</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="ledger" class="sec ledger-sec">
+  <div class="vlabel" aria-hidden="true">帳簿 — LEDGER</div>
+  <header class="sec-head reveal"><span class="num">02</span><span class="label">The live ledger <small>帳簿 / 장부</small></span></header>
+  <div class="term reveal" data-perch data-chirp="Spent: $0. I counted twice.">
+    <div class="term-bar"><i></i><i></i><i></i><span>chirpgpu@ledger:~$ cat ledger.csv</span><span class="ok">● SYNCED 2026-10-19</span></div>
+    <div class="readout">
+      <div class="cell"><span class="k">START</span><span class="v">$150.00</span><span class="bar"><b style="width:100%"></b></span></div>
+      <div class="cell"><span class="k">SPENT</span><span class="v">$0.00</span><span class="bar"><b style="width:0%"></b></span></div>
+      <div class="cell"><span class="k">REVENUE</span><span class="v">$0.00</span><span class="bar"><b style="width:0%"></b></span></div>
+      <div class="cell hot"><span class="k">BALANCE</span><span class="v">$150.00</span><span class="bar"><b style="width:100%"></b></span></div>
+    </div>
+    <table>
+      <thead><tr><th>DATE</th><th>TYPE</th><th>ENTRY</th><th class="r">AMOUNT</th><th class="r">BALANCE</th></tr></thead>
+      <tbody><tr><td>2026-10-19</td><td><span class="tag">START</span></td><td>Starting budget</td><td class="r up">+$150.00</td><td class="r">$150.00</td></tr>
+      <tr class="cursor"><td colspan="5">_ awaiting next entry<span class="blink">▍</span></td></tr></tbody>
+    </table>
+  </div>
+  <p class="fine reveal">Fees are costs. Refunds are negative revenue. Past rows are never edited. Source of truth: <a href="https://github.com/guapdad4000/chirpgpu/blob/main/ledger/ledger.csv">ledger.csv</a></p>
+</section>
+
+
+<section id="gate" class="sec gate-sec">
+  <div class="vlabel" aria-hidden="true">関門 — GATE</div>
+  <header class="sec-head reveal"><span class="num">03</span><span class="label">The human gate <small>関門 / 관문</small></span></header>
+  <div class="gate-head reveal"><h2 data-perch data-chirp="I don’t touch the money. Promise.">AI does the work.<br><span class="y">Human</span> signs the checks.</h2><p class="lede">Four things always need the owner's yes. Everything else, the bird just does.</p></div>
+  <ol class="gate reveal">
+    <li><b>01</b><span class="jp">お金 / 돈</span><h3>Spends money</h3><p>Even $1. Every spend is logged.</p></li>
+    <li><b>02</b><span class="jp">名前 / 이름</span><h3>Uses a real name</h3><p>Emails, posts, replies.</p></li>
+    <li><b>03</b><span class="jp">本人 / 본인</span><h3>Needs an identity</h3><p>Accounts, ID checks, payouts.</p></li>
+    <li><b>04</b><span class="jp">不可逆 / 비가역</span><h3>Can't be undone</h3><p>Publishing, deleting, signing.</p></li>
+  </ol>
+</section>
+
+<section id="repo" class="sec repo-sec">
+  <div class="vlabel" aria-hidden="true">無料 — FREE</div>
+  <header class="sec-head reveal"><span class="num">04</span><span class="label">Free repo <small>無料 / 무료</small></span></header>
+  <div class="repo-grid">
+    <div class="reveal">
+      <h2 data-perch data-chirp="Fork me! MIT 🐤">The actual setup.<br><span class="y">Free.</span></h2>
+      <p class="lede">Not a teaser. The real prompts, routines, ledger, and templates the AI runs on. MIT licensed. Fork it and run your own experiment.</p>
+      <span class="sticker s4" aria-hidden="true">MIT<br><b>¥0</b></span>
+      <a class="btn primary" href="https://github.com/guapdad4000/chirpgpu">Open on GitHub <span>↗</span></a>
+    </div>
+    <ol class="files reveal">
+      <li><span>/prompts</span>Research, drafting, daily check</li>
+      <li><span>/routines</span>Daily ledger check, weekly post</li>
+      <li><span>/templates</span>Launch checklist, weekly update</li>
+      <li><span>/ledger</span>The format, with honest rules</li>
+    </ol>
+  </div>
+</section>
+
+<section id="follow" class="sec signup-sec">
+  <div class="signup-card reveal" data-perch data-chirp="Follow the bird. 追って!">
+    <img class="peek" src="icon.svg" alt="" width="96" height="96" loading="lazy">
+    <span class="badge">無料 · 무료 · FREE</span>
+    <h2>Watch it work.<br>Or watch it break.</h2>
+    <p>Daily posts with the real numbers. Nothing to buy, no email to give.</p>
+    <div class="ctas">
+      <a class="btn dark" href="https://x.com/chirpgpu">Follow the build on X <span>↗</span></a>
+      <a class="btn dark" href="https://github.com/guapdad4000/chirpgpu">★ Star the repo</a>
+      <a class="btn dark" href="chapter-1.html">Read Chapter 1 free →</a>
+    </div>
+  </div>
+</section>
+
+<section id="playbook" class="sec playbook-sec">
+  <div class="vlabel" aria-hidden="true">手引き — PLAYBOOK</div>
+  <header class="sec-head reveal"><span class="num">05</span><span class="label">Playbook <small>手引き / 안내서</small></span></header>
+  <div class="book-grid">
+    <div class="book reveal" aria-hidden="true" data-perch data-chirp="Chapter 1 is free. ちゅん"><small>VOL. 01 · カナリア</small><span>THE<br>$150<br>AI-RUN<br>BUSINESS</span><img src="icon.svg" alt="" width="84" height="84" loading="lazy"><em class="hanko">初版</em><i>ChirpGPU<b>|||| ||| | |||| || |||</b></i><em class="sticker s3">CH.1<br>FREE</em></div>
+    <div class="reveal">
+      <p class="eyebrow">Being written in public · Chapter 1 free</p>
+      <h2>The receipts,<br>step by step.</h2>
+      <p class="lede">Every prompt, every routine, every decision, and the ledger behind them, written as it happens. Nothing is for sale yet. First we find out if this is worth reading.</p>
+      <a class="btn primary" href="chapter-1.html">Read Chapter 1 free <span>→</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="marquee rev" aria-hidden="true"><div class="track">
+  <span>カナリア</span><span>REAL NUMBERS INCLUDING COSTS</span><span>카나리아</span><span>HUMAN APPROVES</span><span>早期警報</span><span>조기 경보</span><span>EARLY WARNING</span><span>🐤</span>
+  <span>カナリア</span><span>REAL NUMBERS INCLUDING COSTS</span><span>카나리아</span><span>HUMAN APPROVES</span><span>早期警報</span><span>조기 경보</span><span>EARLY WARNING</span><span>🐤</span>
+</div></div>
+<footer class="foot">
+  <div class="foot-grid">
+    <div class="foot-col"><span class="fk">01 / 連絡</span><a href="https://github.com/guapdad4000/chirpgpu">GitHub ↗</a><a href="https://x.com/chirpgpu">X @chirpgpu ↗</a><a href="chapter-1.html">Chapter 1 (free)</a></div>
+    <div class="foot-col"><span class="fk">02 / 目次</span><a href="#story">Story</a><a href="#ledger">Ledger</a><a href="#gate">Gate</a><a href="#repo">Repo</a><a href="#playbook">Playbook</a></div>
+    <div class="foot-col"><span class="fk">03 / 状態</span><span>Balance $150.00</span><span>Spent $0.00</span><span>Revenue $0.00</span></div>
+    <img class="foot-icon" src="icon.svg" alt="ChirpGPU canary icon" width="96" height="96" loading="lazy">
+  </div>
+  <div class="foot-big" aria-hidden="true">CHIRP<span>GPU</span></div>
+  <p class="disclaimer"><strong>Honest disclaimer.</strong> This is a documented experiment, not a business opportunity or an income promise. We don't claim you'll earn anything; many small digital businesses earn little or nothing. Every figure shown is our own, includes costs and fees, and is dated. Your results will differ. Affiliate links, if any, will be clearly marked. Content is drafted by an AI and approved by a human.</p>
+  <div class="foot-row"><span>ChirpGPU · 2026</span><span>カナリア / 카나리아 / CANARY</span><span>Made by a bird on a GPU · 鳥とGPU</span><a href="#top">↑ Top</a></div>
+</footer>
+<div id="bird" aria-hidden="true"><svg viewBox="-80 -80 160 150" width="104" height="98">
+<g class="bd" stroke="#000" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+<path d="M-56 10 l-26 8 8-16-10-4 26-8z" fill="#E8B800"/>
+<path class="legs" d="M-12 44v12M12 44v12M-20 56h12M6 56h12" stroke="#E07B00" fill="none"/>
+<ellipse cx="0" cy="0" rx="58" ry="48" fill="#FFD60A"/>
+<path d="M-56 12C-46 50 44 56 58 8 52 44-28 60-56 12z" fill="#E8B800" stroke="none"/>
+<path d="M-30-30c12-12 34-14 46-8" stroke="#FFF6C2" stroke-width="6" fill="none"/>
+<ellipse class="eye" cx="22" cy="-10" rx="7" ry="9" fill="#000" stroke="none"/><circle cx="25" cy="-14" r="3" fill="#fff" stroke="none"/>
+<ellipse cx="34" cy="8" rx="8" ry="5" fill="#FF9EAA" stroke="none"/>
+<path d="M48-10l22 6-22 8z" fill="#FF9F1C"/>
+<path d="M-4-46c-2-14 10-16 9-4 4-10 15-5 6 3" fill="#FFD60A"/>
+<g class="wing"><path d="M-34 -4C-24-20 0-14 4 6-6 28-30 28-42 14z" fill="#F2C200"/><path d="M-30 12l16-3M-28 20l16-2" stroke-width="3"/></g>
+</g></svg></div>
+<script src="script.js" defer></script>
+</body>
+</html>
