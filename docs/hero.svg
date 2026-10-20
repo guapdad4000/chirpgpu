@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Cel-shaded yellow canary perched on a black GPU">
+<defs>
+<pattern id="ht" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.6" fill="#000" opacity=".35"/></pattern>
+<pattern id="htY" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.4" fill="#C98A00" opacity=".55"/></pattern>
+<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFD60A" stop-opacity=".9"/><stop offset="1" stop-color="#FFD60A" stop-opacity="0"/></radialGradient>
+<g id="fan">
+ <circle r="70" fill="#111" stroke="#000" stroke-width="6"/>
+ <circle r="62" fill="url(#glow)" opacity=".35"/>
+ <g fill="#C9A227" stroke="#000" stroke-width="3.5" stroke-linejoin="round">
+  <path id="bl" d="M0 -14 C22 -30 44 -38 58 -26 C46 -16 26 -10 8 -6Z"/>
+  <use href="#bl" transform="rotate(51)"/><use href="#bl" transform="rotate(103)"/><use href="#bl" transform="rotate(154)"/><use href="#bl" transform="rotate(206)"/><use href="#bl" transform="rotate(257)"/><use href="#bl" transform="rotate(309)"/>
+ </g>
+ <g fill="#FFE98A" opacity=".8"><path d="M10 -16 C26 -27 40 -31 50 -27 C38 -24 24 -19 12 -12Z"/></g>
+ <circle r="24" fill="#FFD60A" stroke="#000" stroke-width="5"/>
+ <path d="M-9 4 a10 9 0 1 1 18 0 q0 9 -9 9 q-9 0 -9 -9z" fill="#000"/><circle cx="-1" cy="-6" r="5" fill="#000"/><path d="M4 -7 l7 2 -7 3z" fill="#000"/>
+ <path d="M-18 -10 a20 20 0 0 1 14 -10" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g>
+</defs>
+<ellipse cx="400" cy="560" rx="330" ry="22" fill="#000" opacity=".5"/>
+<!-- heatsink fins -->
+<g stroke="#000" stroke-width="5">
+ <rect x="110" y="300" width="580" height="40" fill="#C9A227"/>
+ <g fill="#8A6D12"><rect x="130" y="306" width="10" height="28"/><rect x="170" y="306" width="10" height="28"/><rect x="210" y="306" width="10" height="28"/><rect x="250" y="306" width="10" height="28"/><rect x="290" y="306" width="10" height="28"/><rect x="330" y="306" width="10" height="28"/><rect x="460" y="306" width="10" height="28"/><rect x="500" y="306" width="10" height="28"/><rect x="540" y="306" width="10" height="28"/><rect x="580" y="306" width="10" height="28"/><rect x="620" y="306" width="10" height="28"/><rect x="660" y="306" width="10" height="28"/></g>
+</g>
+<!-- body -->
+<path d="M90 336 h620 l20 20 v170 l-20 20 h-620 l-20 -20 v-170z" fill="#1A1A1A" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+<path d="M96 344 h610 l14 14 v20 h-638 v-20z" fill="#2E2E2E"/>
+<path d="M76 470 v56 l20 20 h610 l20 -20 v-56z" fill="url(#ht)"/>
+<rect x="110" y="352" width="140" height="8" rx="4" fill="#FFD60A"/>
+<text x="700" y="372" text-anchor="end" font-family="Archivo Black,sans-serif" font-size="18" fill="#FFD60A">CHIRP·GPU</text>
+<use href="#fan" x="215" y="450"/><use href="#fan" x="400" y="450"/><use href="#fan" x="585" y="450"/>
+<!-- gold fingers -->
+<g fill="#C9A227" stroke="#000" stroke-width="3"><rect x="160" y="548" width="300" height="18"/><rect x="480" y="548" width="140" height="18"/></g>
+<g stroke="#000" stroke-width="2"><path d="M180 548v18M200 548v18M220 548v18M240 548v18M260 548v18M280 548v18M300 548v18M320 548v18M340 548v18M360 548v18M380 548v18M400 548v18M420 548v18M440 548v18M500 548v18M520 548v18M540 548v18M560 548v18M580 548v18M600 548v18"/></g>
+<!-- canary -->
+<g transform="translate(400 210)" stroke="#000" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+ <path d="M-110 30 l-70 20 l20 -34 l-26 -6 l70 -24z" fill="#E8B800"/>
+ <path d="M-30 86 v22 M30 86 v22" fill="none" stroke="#E07B00" stroke-width="9"/>
+ <path d="M-46 108 h30 M14 108 h30" stroke="#E07B00" stroke-width="9"/>
+ <ellipse cx="0" cy="10" rx="122" ry="98" fill="#FFD60A"/>
+ <path d="M-118 30 C-100 100 90 120 120 20 C110 90 -60 120 -118 30Z" fill="#E8B800" stroke="none"/>
+ <path d="M-118 30 C-100 100 90 120 120 20 C110 90 -60 120 -118 30Z" fill="url(#htY)" stroke="none"/>
+ <ellipse cx="0" cy="10" rx="122" ry="98" fill="none"/>
+ <path d="M-60 -60 C-40 -82 10 -86 34 -76" stroke="#FFF6C2" stroke-width="10" fill="none"/>
+ <path d="M-70 0 C-50 -30 0 -20 10 20 C-10 60 -60 60 -80 30Z" fill="#F2C200"/>
+ <path d="M-62 26 l30 -6 M-58 40 l30 -4" stroke-width="5"/>
+ <ellipse cx="44" cy="-16" rx="12" ry="15" fill="#000" stroke="none"/><circle cx="48" cy="-22" r="5" fill="#fff" stroke="none"/>
+ <ellipse cx="66" cy="18" rx="14" ry="8" fill="#FF9EAA" stroke="none" opacity=".8"/>
+ <path d="M96 -14 l40 12 l-40 14z" fill="#FF9F1C"/><path d="M98 -2 l36 0" stroke-width="4"/>
+ <path d="M-6 -86 c-4 -26 18 -30 16 -8 c8 -20 28 -10 12 6" fill="#FFD60A"/>
+</g>
+<g fill="#FFD60A" stroke="#000" stroke-width="3"><path d="M640 120 l8 20 20 8 -20 8 -8 20 -8 -20 -20 -8 20 -8z"/><path d="M150 150 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z"/></g>
+<text x="660" y="230" font-family="Noto Sans JP,sans-serif" font-weight="700" font-size="26" fill="#C9A227">ちゅん!</text>
+</svg>
