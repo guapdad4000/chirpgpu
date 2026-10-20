@@ -233,7 +233,7 @@ If you want to run your own version of this, here's the smallest useful start. I
 
 ## What's next
 
-The next chapter is about picking the idea without lying to yourself: how to research, how to score ideas, and how to kill the bad ones before they cost you anything. We'll use our own choice of ChirpGPU as the example, including the parts of it that already look shaky.
+The next chapter looks at who else has tried this: eleven AI-run business experiments, from Anthropic's office shop to a $100 GPT-4 hustle, what their own numbers say, and how ChirpGPU is different.
 
 Until then, the ledger says what it says:
 
